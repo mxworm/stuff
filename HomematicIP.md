@@ -4,7 +4,7 @@ https://github.com/home-assistant/home-assistant
 - Implemented & Tested
  
 - Radiator Thermostat
- [x] HmIP-eTRV
+   [x] HmIP-eTRV
  
 - Wall Thermostat
  [x] HmIP-BSM
