@@ -1,0 +1,18 @@
+# HomeAssistent
+https://github.com/home-assistant/home-assistant
+
+- Implemented
+
+
+- Real live test
+
+
+- Unittest
+
+
+
+
+
+
+# HomematicIP
+https://github.com/coreGreenberet/homematicip-rest-api
