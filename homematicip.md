@@ -1,6 +1,0 @@
-# HomematicIP
-
-
-# HomeAssistant
-
-
