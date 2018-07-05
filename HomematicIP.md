@@ -1,7 +1,7 @@
 # HomeAssistent
 https://github.com/home-assistant/home-assistant
 
-### Implemented & Tested
+### Implemented & running and home
  
 - Window / Door Contact
   - [x] HmIP-SWDO
