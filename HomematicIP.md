@@ -1,15 +1,19 @@
 # HomeAssistent
 https://github.com/home-assistant/home-assistant
 
-- Implemented
-
-
-- Real live test
-
-
-- Unittest
-
-
+- Implemented & Tested
+ 
+- Radiator Thermostat
+ [x] HmIP-eTRV
+ 
+- Wall Thermostat
+ [x] HmIP-BSM
+ 
+- Switch Actuator and Meter for brand switches
+ 
+- Motion detectors
+ [x] HmIP-SMI
+ [x] HmIP-SMI55
 
 
 
