@@ -19,9 +19,10 @@ and running at home
   - [x] HmIP-STH -> homematicip_cloud.sensor (temperature and humidity)
   - [x] HmIP-STHD -> homematicip_cloud. -> homematicip_cloud.binary_switch (temperature and humidity)
 
-- Switch Actuator and Meter for brand switches
+- Switch Actuator and Meter for brand switches and dimming
   - [x] HmIP-BSM -> homematicip_cloud.light
- 
+  - [x] HmIP-BDT -> homematicip_cloud.light
+
 - Motion detectors
   - [x] HmIP-SMI -> homematicip_cloud.binary_sensor
   - [x] HmIP-SMI55 -> homematicip_cloud.binary_sensor
