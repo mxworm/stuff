@@ -17,7 +17,7 @@ and running at home
 - Themperature and Humidity Sensor
   - [x] HmIP-WTH -> homematicip_cloud.sensor (temperature and humidity)
   - [x] HmIP-STH -> homematicip_cloud.sensor (temperature and humidity)
-  - [x] HmIP-STHD -> homematicip_cloud. -> homematicip_cloud.binary_switch (temperature and humidity)
+  - [x] HmIP-STHD -> homematicip_cloud.binary_switch (temperature and humidity)
 
 - Switch Actuator and Meter for brand switches and dimming
   - [x] HmIP-BSM -> homematicip_cloud.light
