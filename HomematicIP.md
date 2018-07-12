@@ -11,8 +11,7 @@ and running at home
   - [x] HmIP-PSM -> homematicip_cloud.switch
   
 - Radiator Thermostat
-  - [x] HmIP-eTRV
-  - [x] HmIP-eTRV-2
+  - [x] HmIP-eTRV(-2) -> homematicip_cloud.climate
  
 - Themperature and Humidity Sensor
   - [x] HmIP-WTH -> homematicip_cloud.sensor (temperature and humidity)
