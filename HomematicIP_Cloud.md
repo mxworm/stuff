@@ -8,7 +8,7 @@ comments: false
 sharing: true
 footer: true
 ha_category: Hub
-ha_iot_class: "Cloud Polling"
+ha_iot_class: "Cloud Push"
 ha_release: 0.66
 featured: false
 ---
@@ -22,6 +22,7 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
     - your **access point ID** (SGTIN)
     - Optional a **name** to identify your access point, this will be used to prefix your device names.
   The **authtoken** will be generatetd internaly and stored
+
 
 * To set up the component via `configuration.yaml`:
 
