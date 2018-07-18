@@ -14,24 +14,24 @@ featured: false
 ---
 
 The [HomematicIP](http://www.homematic-ip.com) component platform is used as an interface to the cloud server.
-For for communication [homematicip-rest-api](https://github.com/coreGreenberet/homematicip-rest-api) is used.
+For for communication [homematicip-rest-api](https://github.com/coreGreenberet/homematicip-rest-api) is used. Since there is no official documentation about this API everything was done via reverse engineering. Use at your own risk.
 
-To set up the component:
+* To set up the component via `configuration.yaml`:
 
-- generate the authentication token:
-```yaml
-generate_auth_token.py
-```
+  - generate the authentication token:
+  ```yaml
+    generate_auth_token.py
+  ```
 
-- add the information to your `configuration.yaml` file:
-```yaml
-homematicip_cloud:
-  - accesspoint: IDENTIFIER
-    authtoken: AUTHTOKEN
-  - name: Location2
-    accesspoint: IDENTIFIER2
-    authtoken: AUTHTOKEN2   
-```
+  - add the information to your `configuration.yaml` file:
+  ```yaml
+  homematicip_cloud:
+    - accesspoint: IDENTIFIER
+      authtoken: AUTHTOKEN
+    - name: Location2
+      accesspoint: IDENTIFIER2
+      authtoken: AUTHTOKEN2   
+  ```
 
 Configuration variables (global):
 
