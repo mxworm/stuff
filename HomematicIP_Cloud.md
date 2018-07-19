@@ -47,3 +47,26 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
       - **accesspoint** (*Required*): This is the access point id (SGTIN)
       - **authtoken** (*Required*): Authentification token generated with `generate_auth_token.py`.
 
+* Actual implemented
+
+- Window / Door Contact
+  - [x] HmIP-SWDO -> homematicip_cloud.binary_sensor
+
+- Pluggable Switch and Meter
+  - [x] HmIP-PSM -> homematicip_cloud.switch
+
+- Switch Actuator and Meter for brand switches and dimming
+  - [x] HmIP-BSM -> homematicip_cloud.light -> homematicip_cloud.light
+  - [x] HmIP-BDT -> homematicip_cloud.light -> homematicip_cloud.light
+
+- Motion detectors
+  - [x] HmIP-SMI -> homematicip_cloud.binary_sensor
+  - [x] HmIP-SMI55 -> homematicip_cloud.binary_sensor
+
+- Radiator Thermostat
+  - [x] HmIP-eTRV(-2) -> homematicip_cloud.climate
+ 
+- Temperature and Humidity Sensor
+  - [x] HmIP-WTH -> homematicip_cloud.sensor (temperature and humidity)
+  - [x] HmIP-STH -> homematicip_cloud.sensor (temperature and humidity)
+  - [x] HmIP-STHD -> homematicip_cloud.sensor (temperature and humidity)
