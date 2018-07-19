@@ -47,7 +47,7 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
       - **accesspoint** (*Required*): This is the access point id (SGTIN)
       - **authtoken** (*Required*): Authentification token generated with `generate_auth_token.py`.
 
-* Actual implemented
+* Actual implemented and tested
 
   - Window / Door Contact
     - [x] HmIP-SWDO -> homematicip_cloud.binary_sensor
