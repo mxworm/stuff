@@ -50,14 +50,14 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 * Actual implemented
 
   - Window / Door Contact
-    [x] HmIP-SWDO -> homematicip_cloud.binary_sensor
+      [x] HmIP-SWDO -> homematicip_cloud.binary_sensor
 
   - Pluggable Switch and Meter
-    [x] HmIP-PSM -> homematicip_cloud.switch
+      [x] HmIP-PSM -> homematicip_cloud.switch
 
   - Switch Actuator and Meter for brand switches and dimming
-    [x] HmIP-BSM -> homematicip_cloud.light -> homematicip_cloud.light
-    [x] HmIP-BDT -> homematicip_cloud.light -> homematicip_cloud.light
+      [x] HmIP-BSM -> homematicip_cloud.light -> homematicip_cloud.light
+      [x] HmIP-BDT -> homematicip_cloud.light -> homematicip_cloud.light
 
   - Motion detectors
     [x] HmIP-SMI -> homematicip_cloud.binary_sensor
