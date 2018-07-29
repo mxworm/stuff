@@ -49,29 +49,26 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 
 * Actual implemented and tested
 
-  - Window / Door Contact
-    - [x] HmIP-SWDO -> homematicip_cloud.binary_sensor
+- homematicip_cloud.alarm_control_panel
+    - [x] Security zones
 
-  - Pluggable Switch and Meter
-    - [x] HmIP-PSM -> homematicip_cloud.switch
+- homematicip_cloud.binary_sensor  
+    - [x] Window / Door Contact (HmIP-SWDO)
+    - [x] Smoke sensor and alarm (HmIP-SWSD) 
+    - [x] Motion detectors (HmIP-SMI)
+    - [x] Motion detectors (HmIP-SMI55)
 
-  -  homematicip_cloud.light
-    - [x] Switch Actuator and meter for brand switches (HmIP-BSM)
-    - [x] Dimmer for brand switches (HmIP-BDT)
-    
-  - 
-
-  - homematicip_cloud.climate
+- homematicip_cloud.climate
     - [x] Radiator Thermostat (HmIP-eTRV,-2)
- 
+
+-  homematicip_cloud.light
+    - [x] Switch actuator and meter for brand switches (HmIP-BSM)
+    - [x] Dimming actuator for brand switches (HmIP-BDT)
+
   - homematicip_cloud.sensor
     - [x] Wall-mounted thermostat (HmIP-WTH)
     - [x] Temperature and Humidity Sensor (HmIP-STH)
     - [x] Temperature and Humidity Sensor (HmIP-STHD)
-  
-  - homematicip_cloud.binary_sensor  
-    - [x] Smoke sensor and alarm (HmIP-SWSD) 
-    - [x] Motion detectors (HmIP-SMI)
-    - [x] Motion detectors (HmIP-SMI55)
-    
-    
+
+  - homematicip_cloud.switch
+    - [x] Pluggable Switch and Meter (HmIP-PSM)
