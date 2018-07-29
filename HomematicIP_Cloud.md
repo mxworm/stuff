@@ -31,7 +31,8 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 ### Setup the component via `configuration.yaml`:
   
   Generate the authentication token:
-  "generate_auth_token.py"
+  
+  `generate_auth_token.py`
   
   Add the information to your `configuration.yaml` file:
 
