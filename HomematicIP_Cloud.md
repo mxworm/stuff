@@ -49,19 +49,19 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 
 * Actual implemented and tested
 
-- homematicip_cloud.alarm_control_panel
+  - homematicip_cloud.alarm_control_panel
     - [x] Security zones
 
-- homematicip_cloud.binary_sensor  
+  - homematicip_cloud.binary_sensor  
     - [x] Window / Door Contact (HmIP-SWDO)
     - [x] Smoke sensor and alarm (HmIP-SWSD) 
     - [x] Motion detectors (HmIP-SMI)
     - [x] Motion detectors (HmIP-SMI55)
 
-- homematicip_cloud.climate
+  - homematicip_cloud.climate
     - [x] Radiator Thermostat (HmIP-eTRV,-2)
 
--  homematicip_cloud.light
+  -  homematicip_cloud.light
     - [x] Switch actuator and meter for brand switches (HmIP-BSM)
     - [x] Dimming actuator for brand switches (HmIP-BDT)
 
