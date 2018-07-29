@@ -19,19 +19,22 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 * To set up the component via interface (**Configuration->Integrations**):
   
   Fill the form:
+  
     - your **access point ID** (SGTIN)
     - Optional a **name** to identify your access point, this will be used to prefix your device names.
+  
   The **authtoken** will be generated and stored internaly.
 
-
 * To set up the component via `configuration.yaml`:
-
-  Generate the authentication token:
+  
+  Generate the authentication token:  
+  
     ```yaml
       generate_auth_token.py
     ```
 
   Add the information to your `configuration.yaml` file:
+
     ```yaml
     homematicip_cloud:
       - accesspoint: IDENTIFIER
@@ -66,4 +69,4 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
   - [x] Temperature and Humidity Sensor (HmIP-STH)
   - [x] Temperature and Humidity Sensor (HmIP-STHD
   - homematicip_cloud.switch
-  - [x] Pluggable Switch and Meter (HmIP-PSM)
+  - [x] Pluggable Switch and Meter (*HmIP-PSM*)
