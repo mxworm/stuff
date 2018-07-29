@@ -20,7 +20,7 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 
 ### Setup the component via interface 
 
-*Configuration* -> *Integrations*
+Menu: *Configuration* -> *Integrations*
   
 Fill the form:
 * your **access point ID** (SGTIN)
