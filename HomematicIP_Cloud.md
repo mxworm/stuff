@@ -30,9 +30,9 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
   Generate the authentication token:  
   
     ```yaml
-      generate_auth_token.py
+    generate_auth_token.py
     ```
-
+  
   Add the information to your `configuration.yaml` file:
 
     ```yaml
@@ -45,10 +45,10 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
     ```
 
     Configuration variables (global):
-
-      - **name** (*Optional*): Name to identify your access point, this will be used to prefix your device names.
-      - **accesspoint** (*Required*): This is the access point id (SGTIN)
-      - **authtoken** (*Required*): Authentification token generated with `generate_auth_token.py`.
+      
+      - name: (*Optional*): Name to identify your access point, this will be used to prefix your device names.
+      - accesspoint: (*Required*): This is the access point id (SGTIN)
+      - authtoken: (*Required*): Authentification token generated with `generate_auth_token.py`.
 
 * Actual implemented and tested
 
