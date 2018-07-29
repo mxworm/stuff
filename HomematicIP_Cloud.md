@@ -20,53 +20,54 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
 
 ### Setup the component via interface 
   
-  Go to: *Configuration* -> *Integrations*
+Go to: 
+
+*Configuration* -> *Integrations*
   
-  Fill the form:
-  - your **access point ID** (SGTIN)
-  - Optional a **name** to identify your access point, this will be used to prefix your device names.
+Fill the form:
+* your **access point ID** (SGTIN)
+* Optional a **name** to identify your access point, this will be used to prefix your device names.
   
-  The authentification token will be generated and stored internaly.
+The authentification token will be generated and stored internaly.
 
 ### Setup the component via `configuration.yaml`:
   
-  Generate the authentication token:
+Generate the authentication token:
   
-  `generate_auth_token.py`
+`generate_auth_token.py`
   
-  Add the information to your `configuration.yaml` file:
+Add the information to your `configuration.yaml` file:
 
-    homematicip_cloud:
-      - accesspoint: IDENTIFIER
-        authtoken: AUTHTOKEN
-      - name: Location2
-        accesspoint: IDENTIFIER2
-        authtoken: AUTHTOKEN2
+```    
+homematicip_cloud:
+- accesspoint: IDENTIFIER
+  authtoken: AUTHTOKEN
+- name: Location2
+  accesspoint: IDENTIFIER2
+  authtoken: AUTHTOKEN2
+```
 
-  Configuration variables (global):
-    
-    blala
-    
-    - **name**: (*Optional*): Name to identify your access point, this will be used to prefix your device names.
-    - **accesspoint**: (*Required*): This is the access point id (SGTIN)
-    - **authtoken**: (*Required*): Authentification token generated with `generate_auth_token.py`.
+Configuration variables (global):
+* **name**: (*Optional*): Name to identify your access point, this will be used to prefix your device names.
+* **accesspoint**: (*Required*): This is the access point id (SGTIN)
+* **authtoken**: (*Required*): Authentification token generated with `generate_auth_token.py`.
 
 ### Actual implemented and tested
-  - homematicip_cloud.alarm_control_panel
-  - [x] Security zones
-  - homematicip_cloud.binary_sensor  
-  - [x] Window and door contact (HmIP-SWDO)
-  - [x] Smoke sensor and alarm (HmIP-SWSD) 
-  - [x] Motion detectors (HmIP-SMI)
-  - [x] Motion detectors (HmIP-SMI55)
-  - homematicip_cloud.climate
-  - [x] Radiator Thermostat (HmIP-eTRV,-2)
-  -  homematicip_cloud.light
-  - [x] Switch actuator and meter for brand switches (HmIP-BSM)
-  - [x] Dimming actuator for brand switches (HmIP-BDT)
-  - homematicip_cloud.sensor
-  - [x] Wall-mounted thermostat (HmIP-WTH)
-  - [x] Temperature and Humidity Sensor (HmIP-STH)
-  - [x] Temperature and Humidity Sensor (HmIP-STHD
-  - homematicip_cloud.switch
-  - [x] Pluggable Switch and Meter (*HmIP-PSM*)
+  * homematicip_cloud.alarm_control_panel
+    - [x] Security zones
+  * homematicip_cloud.binary_sensor  
+    - [x] Window and door contact (HmIP-SWDO)
+    - [x] Smoke sensor and alarm (HmIP-SWSD) 
+    - [x] Motion detectors (HmIP-SMI)
+    - [x] Motion detectors and push button (HmIP-SMI55)
+  * homematicip_cloud.climate
+    - [x] Radiator Thermostat (HmIP-eTRV,-2)
+  * homematicip_cloud.light
+    - [x] Switch actuator and meter for brand switches (HmIP-BSM)
+    - [x] Dimming actuator for brand switches (HmIP-BDT)
+  * homematicip_cloud.sensor
+    - [x] Wall-mounted thermostat (HmIP-WTH)
+    - [x] Temperature and Humidity Sensor (HmIP-STH)
+    - [x] Temperature and Humidity Sensor (HmIP-STHD
+  * homematicip_cloud.switch
+    - [x] Pluggable Switch and Meter (*HmIP-PSM*)
