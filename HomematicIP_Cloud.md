@@ -19,8 +19,6 @@ The [HomematicIP](http://www.homematic-ip.com) component platform is used as an 
 For for communication [homematicip-rest-api](https://github.com/coreGreenberet/homematicip-rest-api) is used. Since there is no official documentation about this API everything was done via reverse engineering. Use at your own risk.
 
 ### Setup the component via interface 
-  
-Go to: 
 
 *Configuration* -> *Integrations*
   
@@ -40,11 +38,11 @@ Add the information to your `configuration.yaml` file:
 
 ```    
 homematicip_cloud:
-- accesspoint: IDENTIFIER
-  authtoken: AUTHTOKEN
-- name: Location2
-  accesspoint: IDENTIFIER2
-  authtoken: AUTHTOKEN2
+  - accesspoint: IDENTIFIER
+    authtoken: AUTHTOKEN
+  - name: Location2
+    accesspoint: IDENTIFIER2
+    authtoken: AUTHTOKEN2
 ```
 
 Configuration variables (global):
@@ -54,20 +52,23 @@ Configuration variables (global):
 
 ### Actual implemented and tested
   * homematicip_cloud.alarm_control_panel
-    - [x] Security zones
+    - [x] Security zones (*HmIP-SecurityZone*)
   * homematicip_cloud.binary_sensor  
-    - [x] Window and door contact (HmIP-SWDO)
-    - [x] Smoke sensor and alarm (HmIP-SWSD) 
-    - [x] Motion detectors (HmIP-SMI)
-    - [x] Motion detectors and push button (HmIP-SMI55)
+    - [x] Window and door contact (*HmIP-SWDO*)
+    - [x] Smoke sensor and alarm (*HmIP-SWSD*) 
+    - [x] Motion detectors (*HmIP-SMI*)
+    - [x] Motion detectors and push button (*HmIP-SMI55*)
   * homematicip_cloud.climate
-    - [x] Radiator Thermostat (HmIP-eTRV,-2)
+    - [x] Radiator thermostat (*HmIP-eTRV,-2*)
+    - [x] Climate group (*HmIP-HeatingGroup*)
   * homematicip_cloud.light
-    - [x] Switch actuator and meter for brand switches (HmIP-BSM)
-    - [x] Dimming actuator for brand switches (HmIP-BDT)
+    - [x] Switch actuator and meter for brand switches (*HmIP-BSM*)
+    - [x] Dimming actuator for brand switches (*HmIP-BDT*)
   * homematicip_cloud.sensor
-    - [x] Wall-mounted thermostat (HmIP-WTH)
-    - [x] Temperature and Humidity Sensor (HmIP-STH)
-    - [x] Temperature and Humidity Sensor (HmIP-STHD
+    - [x] Accesspoint duty-cycle (*HmIP-HAP*)
+    - [x] Wall-mounted thermostat (*HmIP-WTH*)
+    - [x] Temperature and humidity sensor (*HmIP-STH*)
+    - [x] Temperature and humidity Sensor with display (*HmIP-STHD*)
+    - [x] Illuminance sensor (*HmIP-SMI, 55*)
   * homematicip_cloud.switch
     - [x] Pluggable Switch and Meter (*HmIP-PSM*)
