@@ -16,16 +16,16 @@ featured: false
 The [HomematicIP](http://www.homematic-ip.com) component platform is used as an interface to the cloud server.
 For for communication [homematicip-rest-api](https://github.com/coreGreenberet/homematicip-rest-api) is used. Since there is no official documentation about this API everything was done via reverse engineering. Use at your own risk.
 
-* To set up the component via interface (**Configuration->Integrations**):
+### To set up the component via interface (**Configuration->Integrations**):
   
   Fill the form:
   
     - your **access point ID** (SGTIN)
     - Optional a **name** to identify your access point, this will be used to prefix your device names.
   
-  The **authtoken** will be generated and stored internaly.
+  The authentification token will be generated and stored internaly.
 
-* To set up the component via `configuration.yaml`:
+### To set up the component via `configuration.yaml`:
   
   Generate the authentication token:  
   
@@ -45,12 +45,11 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
     ```
 
     Configuration variables (global):
-      
-      - name: (*Optional*): Name to identify your access point, this will be used to prefix your device names.
-      - accesspoint: (*Required*): This is the access point id (SGTIN)
-      - authtoken: (*Required*): Authentification token generated with `generate_auth_token.py`.
+    - **name**: (*Optional*): Name to identify your access point, this will be used to prefix your device names.
+    - **accesspoint**: (*Required*): This is the access point id (SGTIN)
+    - **authtoken**: (*Required*): Authentification token generated with `generate_auth_token.py`.
 
-* Actual implemented and tested
+### Actual implemented and tested
 
   - homematicip_cloud.alarm_control_panel
   - [x] Security zones
