@@ -16,12 +16,12 @@ featured: false
 The [HomematicIP](http://www.homematic-ip.com) component platform is used as an interface to the cloud server.
 For for communication [homematicip-rest-api](https://github.com/coreGreenberet/homematicip-rest-api) is used. Since there is no official documentation about this API everything was done via reverse engineering. Use at your own risk.
 
-* Configuration via interface:
+* To set up the component via interface (**Configuration->Integrations**):
   
   Fill the form:
     - your **access point ID** (SGTIN)
     - Optional a **name** to identify your access point, this will be used to prefix your device names.
-  The **authtoken** will be generatetd internaly and stored
+  The **authtoken** will be generated and stored internaly.
 
 
 * To set up the component via `configuration.yaml`:
@@ -55,22 +55,23 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
   - Pluggable Switch and Meter
     - [x] HmIP-PSM -> homematicip_cloud.switch
 
-  - Switch Actuator and Meter for brand switches and dimming
-    - [x] HmIP-BSM -> homematicip_cloud.light -> homematicip_cloud.light
-    - [x] HmIP-BDT -> homematicip_cloud.light -> homematicip_cloud.light
-
-  - Motion detectors
-    - [x] HmIP-SMI -> homematicip_cloud.binary_sensor
-    - [x] HmIP-SMI55 -> homematicip_cloud.binary_sensor
-
-  - Radiator Thermostat
-    - [x] HmIP-eTRV(-2) -> homematicip_cloud.climate
- 
+  -  homematicip_cloud.light
+    - [x] Switch Actuator and meter for brand switches (HmIP-BSM)
+    - [x] Dimmer for brand switches (HmIP-BDT)
+    
   - 
-  - Temperature and Humidity Sensor
-    - [x] HmIP-WTH -> homematicip_cloud.sensor (temperature and humidity)
-    - [x] HmIP-STH -> homematicip_cloud.sensor (temperature and humidity)
-    - [x] HmIP-STHD -> homematicip_cloud.sensor (temperature and humidity)
-    - [x] Smoke Detector (HmIP-SWSD) 
+
+  - homematicip_cloud.climate
+    - [x] Radiator Thermostat (HmIP-eTRV,-2)
+ 
+  - homematicip_cloud.sensor
+    - [x] Wall-mounted thermostat (HmIP-WTH)
+    - [x] Temperature and Humidity Sensor (HmIP-STH)
+    - [x] Temperature and Humidity Sensor (HmIP-STHD)
+  
+  - homematicip_cloud.binary_sensor  
+    - [x] Smoke sensor and alarm (HmIP-SWSD) 
+    - [x] Motion detectors (HmIP-SMI)
+    - [x] Motion detectors (HmIP-SMI55)
     
     
