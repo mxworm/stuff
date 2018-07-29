@@ -62,7 +62,6 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
     - [x] Radiator Thermostat (HmIP-eTRV,-2)
 
   -  homematicip_cloud.light
-
     - [x] Switch actuator and meter for brand switches (HmIP-BSM)
     - [x] Dimming actuator for brand switches (HmIP-BDT)
 
