@@ -66,7 +66,11 @@ For for communication [homematicip-rest-api](https://github.com/coreGreenberet/h
   - Radiator Thermostat
     - [x] HmIP-eTRV(-2) -> homematicip_cloud.climate
  
+  - 
   - Temperature and Humidity Sensor
     - [x] HmIP-WTH -> homematicip_cloud.sensor (temperature and humidity)
     - [x] HmIP-STH -> homematicip_cloud.sensor (temperature and humidity)
     - [x] HmIP-STHD -> homematicip_cloud.sensor (temperature and humidity)
+    - [x] Smoke Detector (HmIP-SWSD) 
+    
+    
